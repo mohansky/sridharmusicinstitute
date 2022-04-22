@@ -1,0 +1,9 @@
+ .contact-link  {
+        text-decoration: none;
+        color: inherit; 
+
+        &:hover{
+            color: grey; 
+    
+        }
+}

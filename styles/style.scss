@@ -1,0 +1,94 @@
+
+@use './components/about';
+@use './components/classes';
+@use './components/contact';
+@use './components/header';
+@use './components/hero';
+@use './components/post-item';
+@use './components/post-list';
+@use './components/post-preview';
+
+
+@font-face {
+  font-family: "LibreBaskerville-Bold";
+  src: url("/fonts/LibreBaskerville-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto-Regular.woff2");
+}
+
+.map {
+  width: 100%;
+  height: 50vh;
+}
+ 
+ 
+html{
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: LibreBaskerville-Bold;
+}
+
+p{
+  font-family: Roboto-Regular;
+}
+
+h1{
+  font-size: 2.5rem !important;
+} 
+
+h2{
+  font-size: 2.2rem!important;
+} 
+
+h3{
+  font-size: 2rem!important;
+} 
+
+h4{
+  font-size: 1.8rem!important;
+} 
+
+h5{
+  font-size: 1.5rem!important;
+} 
+
+h6{ 
+  font-size: 1.2rem!important;
+}
+
+p{
+  font-size: 1rem!important;
+}
+
+section{
+  padding: 1rem 0 0 0;
+}
+
+section:nth-child(odd){
+  background-color: crimson;
+}
+
+.section-title{
+  text-align: center!important;
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.founder-img-div{
+  display: flex;
+  justify-content: center;
+}
+
+.founder-img{
+  border-radius: 50%;
+  }
+
+  .btn{
+    border-radius: 50px !important;
+    padding: .8rem 1.6rem !important;
+  }

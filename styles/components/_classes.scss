@@ -1,0 +1,27 @@
+.post-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    &:hover{
+        opacity: 0.8;
+    }
+
+  }
+  
+  .post-title{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & a{
+        color: white!important;
+        text-decoration: none !important;
+        text-transform: uppercase;
+    }
+    
+  }
