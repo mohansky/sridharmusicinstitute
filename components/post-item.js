@@ -12,7 +12,7 @@ export default function PostItem({
   overview,
 }) {
   return (
-    <Row className="mt-5">
+    <Row className="mt-5 mb-5">
       <Col md={4} className="mb-5">
         <CoverImage
           slug={slug}
@@ -34,7 +34,7 @@ export default function PostItem({
         <h6 className="mb-1"> Duration </h6>
         <p className="mb-4"> {duration} </p>
         <h6 className="mb-1"> Fees </h6>
-        <p className="mb-4"> {admission} &nbsp; - &nbsp; {fees} </p>
+        <p className="mb-4"> {admission} <br/> {fees} </p>
         <h6 className="mb-1"> Crash Course </h6>
         <p className="mb-4"> {crashCourse} </p>
       </Col>
@@ -45,22 +45,25 @@ export default function PostItem({
       <input type="hidden" value={title}/>
         <Form.Group className="mb-3" controlId="formBasicName">
           {/* <Form.Label>Name</Form.Label> */}
-          <Form.Control type="name" placeholder="Enter Name" /> 
+          <Form.Control type="name" placeholder="Name" /> 
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           {/* <Form.Label>Email address</Form.Label> */}
-          <Form.Control type="email" placeholder="Enter Email" /> 
+          <Form.Control type="email" placeholder="Email" /> 
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPhone">
           {/* <Form.Label>Phone</Form.Label> */}
-          <Form.Control type="phone" placeholder="Enter Phone Number" />
+          <Form.Control type="phone" placeholder="Phone Number" />
         </Form.Group>
         
+        
+        <div class="d-grid mb-5">
         <Button variant="primary" type="submit">
           Register
         </Button>
+        </div>
       </Form>
       </Col>
     </Row>

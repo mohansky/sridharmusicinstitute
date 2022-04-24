@@ -38,7 +38,7 @@ export default function Header() {
                 <Link href="/about">
                   <a className="nav-link" > About </a>
                 </Link> 
-                <Link href="/#about">
+                <Link href="/#classes">
                   <a className="nav-link" > Classes </a>
                 </Link> 
                 <Link href="/#contact">
