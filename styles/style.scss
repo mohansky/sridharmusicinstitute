@@ -1,10 +1,9 @@
-@use './components/classes';
-@use './components/contact';
-@use './components/header';
-@use './components/hero';
-@use './components/post-item';
-@use './components/post-preview';
-
+@use "./components/classes";
+@use "./components/contact";
+@use "./components/header";
+@use "./components/hero";
+@use "./components/post-item";
+@use "./components/post-preview";
 
 @font-face {
   font-family: "LibreBaskerville-Bold";
@@ -16,76 +15,122 @@
   src: url("/fonts/Roboto-Regular.woff2");
 }
 
+:root {
+  --smi-primary: hsl(0, 100%, 50%);
+  --smi-secondary: hsl(0, 100%, 25%);
+  --smi-bg-menu: hsla(0, 0%, 50%, 0.5);
+  --smi-bg-footer: hsl(0, 0%, 25%);
+  --smi-font-light: hsl(0, 0%, 90%);
+  --smi-font-dark: hsl(0, 0%, 10%);
+  --smi-font-sans-serif: Roboto-Regular;
+  --smi-font-serif: LibreBaskerville-Bold;
+  --smi-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
+
 .map {
   width: 100%;
   height: 50vh;
 }
- 
- 
-html{
+
+html {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: LibreBaskerville-Bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--smi-font-serif);
 }
 
-p{
-  font-family: Roboto-Regular;
+p {
+  font-family: var(--smi-font-sans-serif);
 }
 
-h1{
+h1 {
   font-size: 2.5rem !important;
-} 
-
-h2{
-  font-size: 2.2rem!important;
-} 
-
-h3{
-  font-size: 2rem!important;
-} 
-
-h4{
-  font-size: 1.8rem!important;
-} 
-
-h5{
-  font-size: 1.5rem!important;
-} 
-
-h6{ 
-  font-size: 1.2rem!important;
 }
 
-p{
-  font-size: 1rem!important;
+h2 {
+  font-size: 2.2rem !important;
 }
 
-section{
-  padding: 1rem 0 0 0;
+h3 {
+  font-size: 2rem !important;
 }
 
-section:nth-child(odd){
-  background-color: crimson;
+h4 {
+  font-size: 1.8rem !important;
 }
 
-.section-title{
-  text-align: center!important;
+h5 {
+  font-size: 1.5rem !important;
+}
+
+h6 {
+  font-size: 1.2rem !important;
+}
+
+p {
+  font-size: 1rem !important;
+}
+
+section {
+  padding: 1rem 0 0 0; 
+}
+
+section:nth-child(odd) {
+  background-color: #707070ce;
+}
+
+.section-title {
+  text-align: center !important;
   text-transform: uppercase;
   padding: 2rem 0;
+  margin: 5rem;
 }
 
-.founder-img-div{
+.founder-img-div {
   display: flex;
   justify-content: center;
 }
 
-.founder-img{
+.founder-img {
   border-radius: 50%;
-  }
+}
 
-  .btn{
-    border-radius: 50px !important;
-    padding: .8rem 1.6rem !important;
+.btn {
+  display: flex;
+  justify-self: center !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 1rem 3rem !important;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    #e11f1c 0%,
+    #fe6135 51%,
+    #ba1810 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 1px 1px 10px rgb(93, 93, 93);
+
+  &:hover {
+    background-position: right center !important;
+    box-shadow: 2px 2px 15px rgb(93, 93, 93) !important;
   }
+}
+
+footer {
+  background-color: var(--smi-bg-footer);
+  color: var(--smi-font-light);
+}

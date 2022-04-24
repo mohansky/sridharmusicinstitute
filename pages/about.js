@@ -14,7 +14,7 @@ export default function AboutFounder( ) {
         <Container>
 
         
-        <h3 className="text-center mt-5 mb-5"> About the Founder </h3>
+        <h3 className="section-title"> About the Founder </h3>
         <div className="founder-img-div">
         <Image
           className="founder-img"

@@ -1,9 +1,19 @@
- .contact-link  {
-        text-decoration: none;
-        color: inherit; 
+.contact-link {
+  text-decoration: none;
+  color: inherit;
 
-        &:hover{
-            color: grey; 
-    
-        }
+  &:hover {
+    color: grey;
+  }
+}
+
+.social-link {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 2rem;
+  font-size: 2rem;
+
+  &:hover {
+    color: grey;
+  }
 }
