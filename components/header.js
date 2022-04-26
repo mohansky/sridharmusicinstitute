@@ -18,7 +18,7 @@ export default function Header() {
         <Container>
           <Navbar.Brand href="/">
             <Image
-              src="/images/smilogowname640.png"
+              src="/images/smilogoold.png"
               alt="Sridhar Musical Institute"
               width={150}
               height={75}

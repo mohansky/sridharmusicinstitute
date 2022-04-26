@@ -13,7 +13,7 @@ export default function Footer() {
       <Row>
         <Col md={4} className="mb-3">
         <Image
-              src="/images/smilogowname640.png"
+              src="/images/smilogoold.png"
               alt="Sridhar Musical Institute"
               width={300}
               height={150}
