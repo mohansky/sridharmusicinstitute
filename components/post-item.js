@@ -67,7 +67,7 @@ export default function PostItem({
                   </label>
                 </p>
                 <input type="hidden" name="form-name" value="demo" />
-                {/* <input type="hidden" value={title} /> */}
+                <input id="hidden_field" name="hidden_field"  type="hidden" value={title} />
                 <Form.Group className="mb-3" controlId="formBasicName">
                   <Form.Control type="name" name="name" placeholder="Name" />
                 </Form.Group>
