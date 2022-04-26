@@ -41,21 +41,24 @@ export default function PostItem({
 
       <Col md={2}>
       <h6 className="mb-3"> Sign up for a free Demo Class </h6>
-      <Form> 
+      <Form name="demo" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <p class="d-none">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p> 
+      <input type="hidden" name="demo" value="demo"/>
       <input type="hidden" value={title}/>
         <Form.Group className="mb-3" controlId="formBasicName">
-          {/* <Form.Label>Name</Form.Label> */}
-          <Form.Control type="name" placeholder="Name" /> 
+          <Form.Control type="name" name="name" placeholder="Name" /> 
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          {/* <Form.Label>Email address</Form.Label> */}
-          <Form.Control type="email" placeholder="Email" /> 
+          <Form.Control type="email" name="email" placeholder="Email" /> 
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPhone">
-          {/* <Form.Label>Phone</Form.Label> */}
-          <Form.Control type="phone" placeholder="Phone Number" />
+          <Form.Control type="phone" name="phone" placeholder="Phone Number" />
         </Form.Group>
         
         
