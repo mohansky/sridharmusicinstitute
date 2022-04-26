@@ -26,7 +26,7 @@ export default function Contact() {
                 <Col>
                   <Form.Group className="mb-3" controlId="formName">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="email" name="name" placeholder="Your Name" />
+                    <Form.Control type="text" name="name" placeholder="Your Name" />
                   </Form.Group>
                 </Col>
                 <Col>
