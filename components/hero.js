@@ -38,11 +38,13 @@ export default function Hero() {
           <Carousel.Caption>
             <h1>Sridhar Musical Institute specializes in </h1>
             <h4>Guitars, Drums and Keyboard classes.</h4>
+            <div class="d-grid mt-3"> 
             <Link href="/#contact">
               <Button variant="primary" type="submit">
                 Contact
               </Button>
             </Link>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
