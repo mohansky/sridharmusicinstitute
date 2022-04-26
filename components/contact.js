@@ -24,7 +24,7 @@ export default function Contact() {
           <Col md={6}>
           {!show && (
             <Form onSubmit={submitHandeler} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="contact" value="contact"/>
+            <input type="hidden" name="form-name" value="contact"/>
             <p class="d-none">
               <label>
                 Don’t fill this out if you’re human: <input name="bot-field" />
