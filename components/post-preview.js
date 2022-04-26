@@ -14,7 +14,7 @@ export default function PostPreview({
 }) {
   return (
     <Row className="post-img p-0">
-      <Link href={`/classes/${slug}`}>
+      <Link href={`/classes/${slug}/#top`}>
         <div className="overlay"> </div>
       </Link>
 

@@ -17,8 +17,8 @@ export default function Hero() {
             alt="Hero"
           />
           <Carousel.Caption>
-            <h1>Sridhar Music Institute</h1>
-            <h3>Since 1978</h3>
+            <h1>Sridhar Musical Institute</h1>
+            <h4>Since 1978</h4>
             <div class="d-grid mt-3">
               <Link href="/#contact">
                 <Button variant="primary" type="submit">
@@ -36,8 +36,8 @@ export default function Hero() {
             alt="Hero"
           />
           <Carousel.Caption>
-            <h1>Sridhar Music Institute specializes in </h1>
-            <h3>Guitars, Drums and Keyboard classes.</h3>
+            <h1>Sridhar Musical Institute specializes in </h1>
+            <h4>Guitars, Drums and Keyboard classes.</h4>
             <Link href="/#contact">
               <Button variant="primary" type="submit">
                 Contact

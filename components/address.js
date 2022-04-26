@@ -6,7 +6,7 @@ export default function Address() {
     < >
         <h6> Get In Touch! </h6>   
       <address>
-        Sridhar Music Institute
+       Sridhar Musical Institute
         <br />
         17/ 1 Cambridge Road Ulsoor
         <br />

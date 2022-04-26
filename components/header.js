@@ -19,11 +19,11 @@ export default function Header() {
           <Navbar.Brand href="/">
             <Image
               src="/images/smilogowname640.png"
-              alt="Sridhar Music Institute"
+              alt="Sridhar Musical Institute"
               width={150}
               height={75}
             />
-            <p className="d-none"> Sridhar Music Institute </p>
+            <p className="d-none"> Sridhar Musical Institute </p>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse

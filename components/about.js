@@ -6,12 +6,11 @@ const About = () => {
     <section id="about">
       <Container className="my-5">
         <Col className="p-5 text-center">
-          <h4>
-            SMI specializes in Guitar classes, Drums classes and Keyboard
-            classes. <br/> 
-            Our experienced faculty will guide you through your musical
+          <h5>
+            Sridhar Musical Institute specializes in Guitar classes, Drums classes and Keyboard
+            classes. Our experienced faculty will guide you through your musical
             journey.
-          </h4>
+          </h5>
         </Col>
       </Container>
     </section>
