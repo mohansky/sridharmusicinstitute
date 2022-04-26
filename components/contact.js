@@ -1,10 +1,17 @@
 /** CONTACT COMPONENT **/
 
-import * as React from "react";
+import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap"; 
 import Address from "./address";
+import Formsubmit from "./formsubmit";
 
 export default function Contact() {
+  const [show, setShow] = useState(false);
+  const submitHandeler = e => {
+    e.preventDefault();
+    setShow(!show);
+  };
+
   return (
     <section id="contact">
       <Container className="mt-5 pb-5">
@@ -15,8 +22,9 @@ export default function Contact() {
           </Col>
 
           <Col md={6}>
-            <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="demo" value="demo"/>
+          {!show && (
+            <Form onSubmit={submitHandeler} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="contact" value="contact"/>
             <p class="d-none">
               <label>
                 Don’t fill this out if you’re human: <input name="bot-field" />
@@ -51,6 +59,8 @@ export default function Contact() {
                 </Button>
               </div>
             </Form>
+            )}
+            {show && <Formsubmit />}
           </Col>
         </Row>
       </Container>

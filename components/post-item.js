@@ -1,5 +1,7 @@
 import CoverImage from "./cover-image"; 
+import React, { useState } from "react";
 import { Col, Row, Form, Button } from "react-bootstrap" 
+import Demosubmit from "./demosubmit";
 
 export default function PostItem({
   title,
@@ -11,6 +13,13 @@ export default function PostItem({
   crashCourse,
   overview,
 }) {
+
+  const [show, setShow] = useState(false);
+  const demoHandeler = e => {
+    e.preventDefault();
+    setShow(!show);
+  };
+
   return (
     <Row className="mt-5 mb-5">
       <Col md={4} className="mb-5">
@@ -41,7 +50,8 @@ export default function PostItem({
 
       <Col md={2}>
       <h6 className="mb-3"> Sign up for a free Demo Class </h6>
-      <Form name="demo" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      {!show && (
+      <Form onSubmit={demoHandeler} name="demo" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <p class="d-none">
         <label>
           Don’t fill this out if you’re human: <input name="bot-field" />
@@ -68,6 +78,8 @@ export default function PostItem({
         </Button>
         </div>
       </Form>
+      )}
+      {show && <Demosubmit />}
       </Col>
     </Row>
   );
