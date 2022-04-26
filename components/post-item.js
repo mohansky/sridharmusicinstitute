@@ -17,6 +17,7 @@ export default function PostItem({
   const demoHandeler = (e) => {
     e.preventDefault();
     setShow(!show);
+    method="POST"
   };
 
   return (  
@@ -54,7 +55,7 @@ export default function PostItem({
             <h6 className="mb-3"> Sign up for a free Demo Class </h6>
             {!show && (
               <Form
-                onSubmit={demoHandeler}
+                action={demoHandeler}
                 name="demo"
                 method="POST"
                 data-netlify="true"

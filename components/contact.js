@@ -10,6 +10,7 @@ export default function Contact() {
   const submitHandeler = e => {
     e.preventDefault();
     setShow(!show);
+    method="POST"
   };
 
   return (
@@ -23,7 +24,7 @@ export default function Contact() {
 
           <Col md={6}>
           {!show && (
-            <Form onSubmit={submitHandeler} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <Form action={submitHandeler} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact"/>
             <p class="d-none">
               <label>
