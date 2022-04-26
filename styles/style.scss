@@ -19,6 +19,7 @@
   --smi-primary: hsl(0, 100%, 50%);
   --smi-secondary: hsl(0, 100%, 25%);
   --smi-bg-menu: hsla(0, 0%, 50%, 0.5);
+  --smi-bg-secondary: hsl(0, 0%, 75%);
   --smi-bg-footer: hsl(0, 0%, 25%);
   --smi-font-light: hsl(0, 0%, 90%);
   --smi-font-dark: hsl(0, 0%, 10%);
@@ -88,7 +89,7 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: #707070ce;
+  background-color: var(--smi-bg-secondary);
 }
 
 .section-title {
