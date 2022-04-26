@@ -3,15 +3,15 @@
 import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap"; 
 import Address from "./address";
-import Formsubmit from "./formsubmit";
+// import Formsubmit from "./formsubmit";
 
 export default function Contact() {
-  const [show, setShow] = useState(false);
-  const submitHandeler = e => {
-    e.preventDefault();
-    setShow(!show);
-    method="POST"
-  };
+  // const [show, setShow] = useState(false);
+  // const submitHandeler = e => {
+  //   e.preventDefault();
+  //   setShow(!show);
+  //   method="POST"
+  // };
 
   return (
     <section id="contact">
@@ -23,8 +23,8 @@ export default function Contact() {
           </Col>
 
           <Col md={6}>
-          {!show && (
-            <Form action={submitHandeler} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          {/* {!show && ( */}
+            <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact"/>
             <p class="d-none">
               <label>
@@ -60,8 +60,8 @@ export default function Contact() {
                 </Button>
               </div>
             </Form>
-            )}
-            {show && <Formsubmit />}
+            {/* )}
+            {show && <Formsubmit />} */}
           </Col>
         </Row>
       </Container>
