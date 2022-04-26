@@ -130,6 +130,12 @@ section:nth-child(odd) {
   }
 }
 
+
+.form-msg{
+  // display: flex; 
+  min-height: 50vh;
+}
+
 footer {
   background-color: var(--smi-bg-footer);
   color: var(--smi-font-light);
