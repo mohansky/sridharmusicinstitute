@@ -3,13 +3,13 @@ import Map from "../components/Map";
 import Hero from "../components/hero";
 import About from "../components/about";
 import Classes from "../components/classes";
-import Contact from "../components/contact";
+import Formsubmit from "../components/formsubmit";
 import { getAllPosts } from "../lib/api";
 import Testimonials from "../components/testimonials";
 
 const DEFAULT_CENTER = [12.9708658, 77.6278365];
 
-export default function Home({ allPosts }) {
+export default function ThankYou({ allPosts }) {
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ export default function Home({ allPosts }) {
         <About />
         <Classes posts={allPosts} />
         {/* <Testimonials /> */}
-        <Contact />
+        <Formsubmit />
 
         <Map
           className="map mt-0 mb-0"
