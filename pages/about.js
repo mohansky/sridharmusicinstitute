@@ -19,7 +19,7 @@ export default function AboutFounder( ) {
         <Image
           className="founder-img"
           alt="founder" 
-          src='/images/header.jpg' 
+          src='/images/steve.jpg' 
           width='200' 
           height='200'
           layout='intrinsic'
