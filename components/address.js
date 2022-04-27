@@ -26,9 +26,9 @@ export default function Address() {
           <BsTelephone /> &nbsp; +91 819 775 4070 
         </a> 
         <br />
-        {/* <a className="contact-link" href="tel:+919845053648">
-          <BsTelephone /> &nbsp; +91 984 505 3648 
-        </a>  */}
+        <a className="contact-link" href="tel:+919980343554">
+          <BsTelephone /> &nbsp; +91 998 034 3554
+        </a> 
         <br />
       </p> 
     </ >
