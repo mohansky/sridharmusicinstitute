@@ -17,7 +17,7 @@ export default function Contact() {
           <Col md={6}> 
             <Form name="contact" method="POST" action="/thankyou/#contact" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact"/>
-            <p class="d-none">
+            <p className="d-none">
               <label>
                 Don’t fill this out if you’re human: <input name="bot-field" />
               </label>
@@ -45,7 +45,7 @@ export default function Contact() {
                   style={{ height: "100px" }}
                 />
               </Form.Group>
-              <div class="d-grid">
+              <div className="d-grid">
                 <Button variant="primary" type="submit">
                   Submit
                 </Button>

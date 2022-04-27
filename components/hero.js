@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <>
       <Carousel fade>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={1500}>
           <Image
             className="hero-img"
             layout="fill"
@@ -19,7 +19,7 @@ export default function Hero() {
           <Carousel.Caption>
             <h1>Sridhar Musical Institute</h1>
             <h4>Since 1978</h4>
-            <div class="d-grid mt-3">
+            <div className="d-grid mt-3">
               <Link href="/#contact">
                 <Button variant="primary" type="submit">
                   Contact
@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={1500}>
           <Image
             className="hero-img"
             layout="fill"
@@ -38,7 +38,7 @@ export default function Hero() {
           <Carousel.Caption>
             <h1>Sridhar Musical Institute specializes in </h1>
             <h4>Guitars, Drums and Keyboard classes.</h4>
-            <div class="d-grid mt-3"> 
+            <div className="d-grid mt-3"> 
             <Link href="/#contact">
               <Button variant="primary" type="submit">
                 Contact
