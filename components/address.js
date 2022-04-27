@@ -17,20 +17,20 @@ export default function Address() {
       <p>
         <a
           className="contact-link"
-          href="mailto:sridharmusicinstitute@gmail.com"
+          href="mailto:sridharmusicalinstitute@gmail.com"
         >
-          <BsEnvelope /> &nbsp; sridharmusicinstitute@gmail.com 
+          <BsEnvelope /> &nbsp; sridharmusicalinstitute@gmail.com 
         </a>
         <br />
         <a className="contact-link" href="tel:+918197754070">
           <BsTelephone /> &nbsp; +91 819 775 4070 
-        </a>{" "}
+        </a> 
         <br />
-        <a className="contact-link" href="tel:+919845053648">
+        {/* <a className="contact-link" href="tel:+919845053648">
           <BsTelephone /> &nbsp; +91 984 505 3648 
-        </a>{" "}
+        </a>  */}
         <br />
-      </p>{" "}
+      </p> 
     </ >
   );
 }
