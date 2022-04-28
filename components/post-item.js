@@ -70,11 +70,11 @@ export default function PostItem({
                 <input type="hidden" name="form-name" value="demo" />
                 <input id="instrument" name="instrument"  type="hidden" value={title} />
                 <Form.Group className="mb-3" controlId="formBasicName">
-                  <Form.Control type="name" name="name" placeholder="Name" />
+                  <Form.Control type="name" name="name" placeholder="Name" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Control type="email" name="email" placeholder="Email" />
+                  <Form.Control type="email" name="email" placeholder="Email" required  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPhone">
@@ -82,6 +82,7 @@ export default function PostItem({
                     type="phone"
                     name="phone"
                     placeholder="Phone Number"
+                    required 
                   />
                 </Form.Group>
 

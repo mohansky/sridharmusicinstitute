@@ -26,13 +26,13 @@ export default function Contact() {
                 <Col>
                   <Form.Group className="mb-3" controlId="formName">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" name="name" placeholder="Your Name" />
+                    <Form.Control type="text" name="name" placeholder="Your Name" required  />
                   </Form.Group>
                 </Col>
                 <Col>
                   <Form.Group className="mb-3" controlId="formEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" name="email" placeholder="Your Email" />
+                    <Form.Control type="email" name="email" placeholder="Your Email" required  />
                   </Form.Group>
                 </Col>
               </Row>
@@ -42,6 +42,7 @@ export default function Contact() {
                   as="textarea"
                   name="textarea"
                   placeholder="Your Message"
+                  required 
                   style={{ height: "100px" }}
                 />
               </Form.Group>
