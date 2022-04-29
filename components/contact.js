@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Container, Col, Row, Form, Button } from "react-bootstrap"; 
 import Address from "./address"; 
+import SocialLinks from "./social-links";
 
 export default function Contact() { 
   return (
@@ -11,7 +12,14 @@ export default function Contact() {
         <h3 className="section-title"> Contact Us </h3>
         <Row>
           <Col md={6}>
-            <Address />
+          <div className="mb-5">
+          <Address />    
+          </div>
+          <div className="mb-3">
+          <SocialLinks/>              
+          </div>
+          
+
           </Col>
 
           <Col md={6}> 
