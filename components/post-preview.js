@@ -1,6 +1,7 @@
 import CoverImage from "./cover-image";
 import Link from "next/link";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+// import { Button } from "bootstrap";
 
 export default function PostPreview({
   title,
@@ -27,7 +28,11 @@ export default function PostPreview({
       />
       <h3 className="post-title m-0">
         <Link href={`/classes/${slug}`}>
-          <a>{title}</a>
+          <a>
+            <h4> {title} </h4>
+            <br/>
+            <Button variant="primary" size="sm">Details</Button>
+          </a>
         </Link>
       </h3>
     </Row>
