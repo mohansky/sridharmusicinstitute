@@ -22,6 +22,7 @@ export default function Header() {
               alt="Sridhar Musical Institute"
               width={150}
               height={75}
+              placeholder="blurDataURL"
             />
             <p className="d-none"> Sridhar Musical Institute </p>
           </Navbar.Brand>

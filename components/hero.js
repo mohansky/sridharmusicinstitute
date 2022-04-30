@@ -15,6 +15,7 @@ export default function Hero() {
             layout="fill"
             src="/images/header.jpg"
             alt="Hero"
+            placeholder="blurDataURL"
           />
           <Carousel.Caption>
             <h1>Sridhar Musical Institute</h1>
@@ -34,6 +35,7 @@ export default function Hero() {
             layout="fill"
             src="/images/header.jpg"
             alt="Hero"
+            placeholder="blurDataURL"
           />
           <Carousel.Caption>
             <h1>Sridhar Musical Institute specializes in </h1>
