@@ -2,6 +2,7 @@
 @use "./components/contact";
 @use "./components/header";
 @use "./components/hero";
+@use "./components/forms";
 @use "./components/post-item";
 @use "./components/post-preview";
 
@@ -20,6 +21,7 @@
   --smi-secondary: hsl(0, 100%, 25%);
   --smi-bg-menu: hsla(0, 0%, 50%, 0.5);
   --smi-bg-secondary: hsl(0, 0%, 75%);
+  --smi-bg-form: hsl(0, 0%, 90%);
   --smi-bg-footer: hsl(0, 0%, 25%);
   --smi-font-light: hsl(0, 0%, 90%);
   --smi-font-dark: hsl(0, 0%, 10%);
