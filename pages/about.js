@@ -23,6 +23,7 @@ export default function AboutFounder( ) {
           width='200' 
           height='200'
           layout='intrinsic'
+          placeholder="blurDataURL"
           />
         </div>
        
