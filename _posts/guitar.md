@@ -5,8 +5,8 @@ description: "Guitar"
 img: '/images/class/guitar.jpg'
 duration: 6 months – Weekly twice of 1-hour duration 
 admission: Admission Rs. 1,000
-fees: Monthly Rs. 2,500 (Date to date)
-crashCourse: Rs. 15,000 – Weekly 5 classes within 3 months 
+fees: Monthly Rs. 3,000 (Date to date)
+crashCourse: Rs. 18,000 – Weekly 5 classes within 3 months 
 overview: 
     - Chart of the finger board
     - Finger exercises
